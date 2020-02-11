@@ -1,3 +1,98 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+	font-family: Lato;
+}
+
+.about {
+
+	&__body {
+		max-width: 832px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__text {
+		max-width: 688px;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 25.89px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 0 33.333%;
+	}
+
+}
+
+.title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+
+	&:after {
+		content:'';
+		position: absolute;
+		width: 50px;
+		bottom: 0;
+		height: 1px;
+		left: 50%;
+		background-color: #000;
+		margin: 0px 0px -30px -25px;
+	}
+}
+
+.item-about {
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		width: 92px;
+		height: 92px;
+		border-radius: 50%;
+		border: 1px solid #000;
+	}
+
+	&__title {
+		text-align: center;
+		color: #000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0 0 36px 0;
+	}
+
+	&__text {
+		text-align: center;
+		color: #868585;
+
+	}
+
 }
